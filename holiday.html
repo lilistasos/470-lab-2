@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="stylesheet" href="holiday.css" />
+<title>Home Page - Holiday Viewer</title>
+</head>
+<body>
+<div class="container">
+    <h1>Public Holidays Finder</h1>
+    <div id="inputs">
+        <div>
+            <label>Country Code:</label>
+            <input type="text" id="country-code-input" placeholder="e.g., US, DE, FR" />
+        </div>
+        <div>
+            <label>Year:</label>
+            <input type="text" id="year-input" placeholder="e.g., 2023" />
+        </div>
+        <div>
+            <label>&nbsp;</label>
+            <button id="submit-btn">Submit</button>
+        </div>
+    </div>
+    <table id="holiday-table">
+        <thead>
+            <tr>
+                <th>Date</th>
+                <th>Name</th>
+                <th>Local Name</th>
+                <th>Country Code</th>
+                <th>Global</th>
+            </tr>
+        </thead>
+        <tbody id="table-body"></tbody>
+    </table>
+</div>
+<script src="holiday.js"></script>
+</body>
+</html>
